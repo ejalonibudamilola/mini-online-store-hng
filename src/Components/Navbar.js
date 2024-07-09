@@ -69,9 +69,9 @@ function Navbar({cartNo}){
                 </Modal.Body>
                 <Modal.Footer>
                     <a href="/checkout">
-                        <Button variant="secondary">
+                        <button variant="secondary">
                             Check Out
-                        </Button>   
+                        </button>   
                     </a>                 
                 </Modal.Footer>
             </Modal>  

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import user from '../Images/user.png';
 import cart from '../Images/cart.png';
@@ -8,8 +8,6 @@ import p5 from '../Images/p5.png';
 import Add from '../Images/add.png';
 import Delete from '../Images/delete.png';
 import '../Styles/main.css';
-import { Link } from 'react-router-dom';
-
 
 
 function Navbar({cartNo}){
@@ -70,11 +68,11 @@ function Navbar({cartNo}){
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Link to="/checkout">
-                        <button variant="secondary">
+                    <a href="/checkout">
+                        <Button variant="secondary">
                             Check Out
-                        </button>   
-                    </Link>                 
+                        </Button>   
+                    </a>                 
                 </Modal.Footer>
             </Modal>  
         </header>

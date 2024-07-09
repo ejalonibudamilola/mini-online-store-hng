@@ -75,7 +75,7 @@ function Hero(){
                     <p>Browse through our featured eco-friendly products of the day.</p>
                 </div>
                 <div className='arrow'>
-                    <a href="#">See all products <img src={arrow} alt="" /></a>
+                    <a href="/#">See all products <img src={arrow} alt="" /></a>
                 </div>
                 <div className='row product-div'>
                     <div className='col-md-3 products'>

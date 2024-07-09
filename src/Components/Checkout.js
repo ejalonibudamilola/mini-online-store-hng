@@ -1,12 +1,14 @@
-import { Container } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import p5 from '../Images/p5.png';
 import '../Styles/main.css';
+import Footer from "./Footer";
 
 
 
 function Checkout(){
     return (
         <div className="checkout">
+            <Navbar/>
             <Container>
                 <div className="checkout-link"><a className="checkout-home" href="#">Home</a>/<a className="checkout-check" href="#">Checkout</a></div>
                 <div className="row">
@@ -126,6 +128,7 @@ function Checkout(){
                 </div>
 
             </Container>
+            <Footer/>
         </div>
 
     );

@@ -33,11 +33,12 @@ import b5 from '../Images/b5.jpeg';
 import b6 from '../Images/b6.jpeg';
 import cart from '../Images/cart-white.png';
 
-function Hero(){  
+function Hero({updateCart}){  
 
 
   const showMessage = () => {
-      alert('Item successfully added to cart, check your cart');    
+    updateCart();
+    alert('Item successfully added to cart, check your cart');    
   }
    
 

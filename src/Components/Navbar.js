@@ -10,7 +10,7 @@ import Delete from '../Images/delete.png';
 import '../Styles/main.css';
 
 
-function Navbar(){
+function Navbar({cartNo}){
 
     const navRef = useRef();
 
@@ -32,7 +32,7 @@ function Navbar(){
                     <a className="link" href="/#">Shop</a>
                     <input type="text" className="icon"  placeholder="Search for Eco friendly products"/>
                     <a className="store" href="/#"><img src={user} alt="" /></a>                
-                    <a className="store" href="/#" onClick={handleShow}><img src={cart} alt="" /> <sup>2</sup></a>
+                    <a className="store" href="/#" onClick={handleShow}><img src={cart} alt="" /> <sup>{cartNo}</sup></a>
                     <button className="nav-btn nav-close-btn" onClick={ showNavBar }>
                         <FaTimes/>
                     </button>

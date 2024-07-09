@@ -1,7 +1,8 @@
-import { Container, Navbar } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import p5 from '../Images/p5.png';
 import '../Styles/main.css';
 import Footer from "./Footer";
+import Navbar from "./Navbar"
 
 
 

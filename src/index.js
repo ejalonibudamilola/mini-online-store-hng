@@ -4,12 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import {BrowserRouter as Router,  Switch, Route,  Link, RouterProvider, createBrowserRouter} from "react-router-dom";
+import Checkout from './Components/Checkout';
+import './Styles/main.css';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/checkout",
+    element: <Checkout/>
+  }
+]);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   < div className='whole'>
+
+    <RouterProvider router={router} />
+    </div>
   </React.StrictMode>
 );
 

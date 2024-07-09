@@ -28,7 +28,7 @@ function Navbar({cartNo}){
             <header>
                 <h3 className="logo">Nature's Bounty</h3>
                 <nav className="nav" ref={ navRef }>
-                    <a className="active link" href="/#">Home</a>
+                    <a className="active link" href="/">Home</a>
                     <a className="link" href="/#">Shop</a>
                     <input type="text" className="icon"  placeholder="Search for Eco friendly products"/>
                     <a className="store" href="/#"><img src={user} alt="" /></a>                
@@ -68,9 +68,11 @@ function Navbar({cartNo}){
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Check Out
-                    </Button>                    
+                    <a href="/checkout">
+                        <Button variant="secondary">
+                            Check Out
+                        </Button>   
+                    </a>                 
                 </Modal.Footer>
             </Modal>  
         </header>

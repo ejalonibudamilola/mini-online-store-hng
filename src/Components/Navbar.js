@@ -8,6 +8,8 @@ import p5 from '../Images/p5.png';
 import Add from '../Images/add.png';
 import Delete from '../Images/delete.png';
 import '../Styles/main.css';
+import { Link } from 'react-router-dom';
+
 
 
 function Navbar({cartNo}){
@@ -68,11 +70,11 @@ function Navbar({cartNo}){
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <a href="/checkout">
-                        <button variant="secondary">
+                    <Link to="/checkout">
+                        <Button variant="secondary">
                             Check Out
-                        </button>   
-                    </a>                 
+                        </Button>   
+                    </Link>                 
                 </Modal.Footer>
             </Modal>  
         </header>

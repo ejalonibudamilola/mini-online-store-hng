@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import user from '../Images/user.png';
 import cart from '../Images/cart.png';
@@ -71,9 +71,9 @@ function Navbar({cartNo}){
                 </Modal.Body>
                 <Modal.Footer>
                     <Link to="/checkout">
-                        <Button variant="secondary">
+                        <button variant="secondary">
                             Check Out
-                        </Button>   
+                        </button>   
                     </Link>                 
                 </Modal.Footer>
             </Modal>  

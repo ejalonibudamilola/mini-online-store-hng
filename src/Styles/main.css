@@ -220,6 +220,10 @@ header .nav-btn{
     margin: 3rem 0;
 }
 
+.img-to-slide{
+    overflow-x: auto;
+}
+
 .feature{
     margin-top: 6rem;
     margin-bottom: 3rem;

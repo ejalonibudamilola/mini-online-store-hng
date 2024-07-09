@@ -56,7 +56,7 @@ function Hero(){
                 <a href="#features">Discover Eco-Friendly Products</a>
             </button>
             <div className="div-animate">
-                <marquee scrollamount="50">
+                <div className='d-flex img-to-slide'>
                     <img className='img-animate' src={m1} alt="" />
                     <img className='img-animate' src={m2} alt="" />
                     <img className='img-animate' src={m3} alt="" />
@@ -65,7 +65,8 @@ function Hero(){
                     <img className='img-animate' src={m6} alt="" />
                     <img className='img-animate' src={m7} alt="" />
                     <img className='img-animate' src={m8} alt="" />
-                </marquee>
+                </div>
+               
             </div>
 
             <section>

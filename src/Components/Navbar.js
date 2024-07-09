@@ -73,8 +73,7 @@ function Navbar(){
                     </Button>                    
                 </Modal.Footer>
             </Modal>  
-            </header>
-
+        </header>
                       
     );
 }

@@ -3,8 +3,10 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Checkout from './Components/Checkout'
 import Footer from './Components/Footer';
+import Checkout from './Components/Checkout';
 
 function App() {
   const [cartNo, setCartNo] = useState(0);
@@ -12,13 +14,17 @@ function App() {
     setCartNo(cartNo+1);
   }
   return (
-    <React.Fragment>
+    <Router>
       <div className='whole'>
-      <Navbar cartNo={cartNo}/>
-      <Hero updateCart={updateCartNo}/>
-      <Footer/>
+        <Navbar cartNo={cartNo}/>
+        <Routes>
+          <Route path="/"  element={<Hero updateCart={updateCartNo}/>}/>
+          <Route path="/checkout" element={<Checkout/>} />
+        </Routes>
+        <Footer/>
       </div>
-    </React.Fragment>
+    </Router>
+      
   );
 }
 

@@ -213,19 +213,43 @@ header .nav-btn{
 
 
 .img-animate{
-    padding-left: 2rem;
+    width: 100%;
 }
 
 .div-animate{
     margin: 3rem 0;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
 
 .img-to-slide{
-    overflow-x: auto;
+    display: flex;
+    width: calc(300px * 16);
+    animation: scroll 5s linear infinite;
+}
+
+.slide{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
 }
 
 .feature{
-    margin-top: 6rem;
     margin-bottom: 3rem;
 }
 

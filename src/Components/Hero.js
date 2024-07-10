@@ -57,15 +57,23 @@ function Hero({updateCart}){
                 <a href="#features">Discover Eco-Friendly Products</a>
             </button>
             <div className="div-animate">
-                <div className='d-flex img-to-slide'>
-                    <img className='img-animate' src={m1} alt="" />
-                    <img className='img-animate' src={m2} alt="" />
-                    <img className='img-animate' src={m3} alt="" />
-                    <img className='img-animate' src={m4} alt="" />
-                    <img className='img-animate' src={m5} alt="" />
-                    <img className='img-animate' src={m6} alt="" />
-                    <img className='img-animate' src={m7} alt="" />
-                    <img className='img-animate' src={m8} alt="" />
+                <div className='img-to-slide'>
+                    <div className="slide"><img className='img-animate' src={m1} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m2} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m3} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m4} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m5} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m6} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m7} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m8} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m1} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m2} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m3} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m4} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m5} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m6} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m7} alt="" /></div>
+                    <div className="slide"><img className='img-animate' src={m8} alt="" /></div>
                 </div>
                
             </div>

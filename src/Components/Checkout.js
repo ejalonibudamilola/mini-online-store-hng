@@ -8,7 +8,7 @@ function Checkout(){
     return (
         <div className="checkout">
             <Container>
-                <div className="checkout-link"><a className="checkout-home" href="/">Home</a>/<a className="checkout-check" href="#">Checkout</a></div>
+                <div className="checkout-link"><a className="checkout-home" href="/#">Home</a>/<a className="checkout-check" href="/#">Checkout</a></div>
                 <div className="row">
                     <div className="col-md-8 order-div">
                         <div className="order-summary">

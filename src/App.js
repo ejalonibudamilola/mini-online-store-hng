@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Checkout from './Components/Checkout'
+import Checkout from './Components/Checkout'
 import Footer from './Components/Footer';
 import Checkout from './Components/Checkout';
 
